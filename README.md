@@ -22,9 +22,9 @@ To monitor company workstation storage devices for changes.
 
 
 INSTALLATION INSTRUCTIONS: 
-1. Copy the entire "Storage_Monitor" folder into the "AutomationScripts" folder on TFISERVER (or any other network accesbible location).
+1. Copy the entire "Storage_Monitor" folder into the "AutomationScripts" folder on SERVER (or any other network accesbible location).
 2. Edit "sendmail.ini" with your desired email and password.
-3. Add a group policy object for with logon script to run the local copy of wscript.exe with the absolute path for the script specified as the main argument followed by the desired arguments for the script. (example, script directory C:\Windows\System32\wscript.exe parameter directory \\tfiserver\AutomationScripts\Workstation_USB_Monitor\Workstation_USB_Monitor.vbs --gui)
+3. Add a group policy object for with logon script to run the local copy of wscript.exe with the absolute path for the script specified as the main argument followed by the desired arguments for the script. (example, script directory C:\Windows\System32\wscript.exe parameter \\server\AutomationScripts\Workstation_USB_Monitor\Workstation_USB_Monitor.vbs --gui)
 4. Verify that each workstation runs the script on user logon and that UAC is configured to allow sendmail.exe to run.
 5. To disable email notifications, run with the -e or --email argument set.
 6. To disable logging, run with the -l or --log argument set.
