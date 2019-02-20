@@ -1,5 +1,3 @@
-# Workstation_USB_Monitor
-
 NAME: Workstation_USB_Monitor.vbs
 
 TYPE: Visual Basic Script
